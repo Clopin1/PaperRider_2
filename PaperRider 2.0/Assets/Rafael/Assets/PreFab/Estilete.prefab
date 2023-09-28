@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5630325064830815153}
   - component: {fileID: 6888143078696873877}
   - component: {fileID: 1590918663115443349}
+  - component: {fileID: 855072636}
+  - component: {fileID: 855072635}
+  - component: {fileID: 855072634}
   m_Layer: 7
   m_Name: Estilete
   m_TagString: Obstacle
@@ -93,7 +96,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5630325064830815154}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -124,6 +127,147 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48f362baa40a1a4bbbabd0f2e36a787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
   rb2D: {fileID: 0}
   rotation: {x: 0, y: 0, z: 360}
+--- !u!50 &855072636
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630325064830815154}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!66 &855072635
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630325064830815154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 1
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 855072634}
+    m_ColliderPaths:
+    - - X: 2760000
+        Y: 6210000
+      - X: 2730000
+        Y: 6240000
+      - X: 2430000
+        Y: 6570000
+      - X: 1860000
+        Y: 6509999
+      - X: 1920000
+        Y: 7380000
+      - X: 1530000
+        Y: 7620000
+      - X: -1260000
+        Y: 8310000
+      - X: -1830000
+        Y: 8310000
+      - X: -2460000
+        Y: 6540000
+      - X: -2760000
+        Y: 6240000
+      - X: -2760000
+        Y: -11580000
+      - X: -2730000
+        Y: -11640000
+      - X: -2490000
+        Y: -11910001
+      - X: -1980000
+        Y: -12000000
+      - X: 1950000
+        Y: -12000000
+      - X: 2400000
+        Y: -11910001
+      - X: 2579999
+        Y: -11790000
+      - X: 2760000
+        Y: -11640000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 0.1949973, y: -1.2}
+      - {x: 0.2400042, y: -1.1909974}
+      - {x: 0.2580015, y: -1.1789988}
+      - {x: 0.276, y: -1.1639878}
+      - {x: 0.2759932, y: 0.6210075}
+      - {x: 0.24298671, y: 0.65699863}
+      - {x: 0.18600251, y: 0.651036}
+      - {x: 0.1919861, y: 0.7380086}
+      - {x: 0.1529962, y: 0.7620009}
+      - {x: -0.126003, y: 0.83100003}
+      - {x: -0.1830066, y: 0.83098173}
+      - {x: -0.2460036, y: 0.6539966}
+      - {x: -0.276, y: 0.6239892}
+      - {x: -0.2759973, y: -1.1580055}
+      - {x: -0.27299762, y: -1.1640029}
+      - {x: -0.2489913, y: -1.1910018}
+      - {x: -0.1979975, y: -1.2}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!60 &855072634
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630325064830815154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.099999994, y: 0, z: 0.099999994, w: 1.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 8}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.91999996, y: 2.07}
+      - {x: 0.90999997, y: 2.08}
+      - {x: 0.81, y: 2.19}
+      - {x: 0.62, y: 2.1699998}
+      - {x: 0.64, y: 2.46}
+      - {x: 0.51, y: 2.54}
+      - {x: -0.42, y: 2.77}
+      - {x: -0.61, y: 2.77}
+      - {x: -0.82, y: 2.18}
+      - {x: -0.91999996, y: 2.08}
+      - {x: -0.91999996, y: -3.86}
+      - {x: -0.90999997, y: -3.8799999}
+      - {x: -0.83, y: -3.97}
+      - {x: -0.65999997, y: -4}
+      - {x: 0.65, y: -4}
+      - {x: 0.79999995, y: -3.97}
+      - {x: 0.85999995, y: -3.9299998}
+      - {x: 0.91999996, y: -3.8799999}

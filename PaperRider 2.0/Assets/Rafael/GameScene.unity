@@ -1300,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vida +1
       objectReference: {fileID: 0}
+    - target: {fileID: 5096275493160299148, guid: 4b4a3596c210ccd40aba39d7cd96ac28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7292387530573443331, guid: 4b4a3596c210ccd40aba39d7cd96ac28, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1395,7 +1399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 464751981012711740, guid: 1342188c8aea7eb43927d4ae5f0721e7, type: 3}
-  spawnRate: 7.2
+  spawnRate: 7
   minHeight: 6
   maxHeight: 9
 --- !u!114 &1164659923
@@ -1411,7 +1415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5630325064830815154, guid: d38203d0ba2bed54d931ea6aaf684327, type: 3}
-  spawnRate: 3.3
+  spawnRate: 4
   minHeight: -4
   maxHeight: 4
 --- !u!114 &1164659924
@@ -1443,7 +1447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1289322085621859637, guid: a066b43652c786d45a1aa7d9f33b6ede, type: 3}
-  spawnRate: 1.28
+  spawnRate: 2
   minHeight: -7
   maxHeight: -4
 --- !u!114 &1164659926
@@ -1459,7 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 9041204366820603340, guid: 1a27e6585b2ebcb43bbb1b7f36c9a5ce, type: 3}
-  spawnRate: 1.28
+  spawnRate: 3
   minHeight: 5
   maxHeight: 9
 --- !u!1 &1186245577
@@ -1728,7 +1732,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1746,14 +1750,14 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!224 &1451344536
 RectTransform:

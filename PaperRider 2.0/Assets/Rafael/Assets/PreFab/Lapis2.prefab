@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3049937105552227888}
   - component: {fileID: -2144832733141019040}
   - component: {fileID: 6282269098705637428}
+  - component: {fileID: 266671566}
+  - component: {fileID: 266671565}
   m_Layer: 7
   m_Name: Lapis2
   m_TagString: Obstacle
@@ -112,7 +114,7 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0.41, y: 0.02, z: 0.48999998, w: 0.11}
@@ -138,3 +140,87 @@ PolygonCollider2D:
       - {x: 0.14386915, y: -0.6361712}
       - {x: 0.14001083, y: 0.6846321}
       - {x: 0.11854263, y: 0.76154476}
+--- !u!50 &266671566
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9041204366820603340}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!66 &266671565
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9041204366820603340}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 1
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 6282269098705637428}
+    m_ColliderPaths:
+    - - X: -4400067
+        Y: 34920328
+      - X: -5671530
+        Y: 34571060
+      - X: -6206081
+        Y: 25771698
+      - X: -6292563
+        Y: -28933418
+      - X: -4632155
+        Y: -33161514
+      - X: -3274589
+        Y: -35898220
+      - X: -2769070
+        Y: -36505572
+      - X: -993102
+        Y: -39637340
+      - X: 843423
+        Y: -36241904
+      - X: 2623160
+        Y: -32699260
+      - X: 4028336
+        Y: -29263876
+      - X: 3920303
+        Y: 31493078
+      - X: 3319193
+        Y: 35031060
+  m_CompositePaths:
+    m_Paths:
+    - - {x: -0.099340305, y: -3.9636812}
+      - {x: 0.084343, y: -3.6241891}
+      - {x: 0.2623161, y: -3.2699254}
+      - {x: 0.4028336, y: -2.9263825}
+      - {x: 0.3920299, y: 3.1493094}
+      - {x: 0.331895, y: 3.5031056}
+      - {x: -0.4400103, y: 3.492032}
+      - {x: -0.5671541, y: 3.4570863}
+      - {x: -0.6206081, y: 2.5771701}
+      - {x: -0.6292546, y: -2.8933465}
+      - {x: -0.46321452, y: -3.3161535}
+      - {x: -0.3274571, y: -3.589824}
+      - {x: -0.2769061, y: -3.650559}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005

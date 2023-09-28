@@ -11,6 +11,8 @@ public class GoFall : MonoBehaviour
 
     private void Start()
     {
+        System.Random rand = new System.Random();
+        speed = rand.Next(10, 20);
         downEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 1f;
     }
 

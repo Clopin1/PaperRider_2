@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Net.Sockets;
 
 public class GoRotate : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GoRotate : MonoBehaviour
 
     private void Start()
     {
+        System.Random rand = new System.Random();
+        speed = rand.Next(15, 20);
         leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 1f;
         rb2D = GetComponent<Rigidbody2D>();
     }
